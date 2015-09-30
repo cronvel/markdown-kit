@@ -1,0 +1,124 @@
+/*
+github-like style based upon (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+
+.markdown .hljs {
+  display: block;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.markdown .hljs-comment ,
+.markdown .hljs-template_comment ,
+.markdown .diff .hljs-header ,
+.markdown .hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown .hljs-keyword ,
+.markdown .css .rule .hljs-keyword ,
+.markdown .hljs-winutils ,
+.markdown .javascript .hljs-title ,
+.markdown .nginx .hljs-title ,
+.markdown .hljs-subst ,
+.markdown .hljs-request ,
+.markdown .hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown .hljs-number ,
+.markdown .hljs-hexcolor ,
+.markdown .ruby .hljs-constant {
+  color: #099;
+}
+
+.markdown .hljs-string ,
+.markdown .hljs-tag .hljs-value ,
+.markdown .hljs-phpdoc ,
+.markdown .tex .hljs-formula {
+  color: #d14;
+}
+
+.markdown .hljs-title ,
+.markdown .hljs-id ,
+.markdown .coffeescript .hljs-params ,
+.markdown .scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.markdown .javascript .hljs-title ,
+.markdown .lisp .hljs-title ,
+.markdown .clojure .hljs-title ,
+.markdown .hljs-subst {
+  font-weight: normal;
+}
+
+.markdown .hljs-class .hljs-title ,
+.markdown .haskell .hljs-type ,
+.markdown .vhdl .hljs-literal ,
+.markdown .tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown .hljs-tag ,
+.markdown .hljs-tag .hljs-title ,
+.markdown .hljs-rules .hljs-property ,
+.markdown .django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.markdown .hljs-attribute ,
+.markdown .hljs-variable ,
+.markdown .lisp .hljs-body {
+  color: #008080;
+}
+
+.markdown .hljs-regexp {
+  color: #009926;
+}
+
+.markdown .hljs-symbol ,
+.markdown .ruby .hljs-symbol .hljs-string ,
+.markdown .lisp .hljs-keyword ,
+.markdown .tex .hljs-special ,
+.markdown .hljs-prompt {
+  color: #990073;
+}
+
+.markdown .hljs-built_in ,
+.markdown .lisp .hljs-title ,
+.markdown .clojure .hljs-built_in {
+  color: #0086b3;
+}
+
+.markdown .hljs-preprocessor ,
+.markdown .hljs-pragma ,
+.markdown .hljs-pi ,
+.markdown .hljs-doctype ,
+.markdown .hljs-shebang ,
+.markdown .hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown .hljs-deletion {
+  background: #fdd;
+}
+
+.markdown .hljs-addition {
+  background: #dfd;
+}
+
+.markdown .diff .hljs-change {
+  background: #0086b3;
+}
+
+.markdown .hljs-chunk {
+  color: #aaa;
+}

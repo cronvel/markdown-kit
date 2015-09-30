@@ -1,0 +1,35 @@
+{
+  "name": "markdown-kit",
+  "version": "0.0.1",
+  "description": "A markdown toolbox.",
+  "main": "lib/markdown-kit.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "async-kit": "^0.5.10",
+    "highlight.js": "^8.8.0",
+    "marked": "^0.3.5",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "jshint": "^2.5.6",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/markdown-kit.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/markdown-kit/issues"
+  }
+}
