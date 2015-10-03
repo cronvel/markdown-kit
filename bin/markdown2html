@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require( '../lib/markdown-kit.js' ).cli() ;
+require( '../lib/markdown-kit.js' ).markdown2htmlCli() ;
