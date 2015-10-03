@@ -1,10 +1,13 @@
 {
   "name": "markdown-kit",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A markdown toolbox.",
   "main": "lib/markdown-kit.js",
   "directories": {
     "test": "test"
+  },
+  "bin": {
+  	"markdown2html": "./bin/markdown2html"
   },
   "dependencies": {
     "async-kit": "^0.5.10",
