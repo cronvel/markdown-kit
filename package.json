@@ -1,24 +1,24 @@
 {
   "name": "markdown-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A markdown toolbox.",
   "main": "lib/markdown-kit.js",
   "directories": {
     "test": "test"
   },
   "bin": {
-  	"markdown2html": "./bin/markdown2html"
+    "markdown2html": "./bin/markdown2html"
   },
   "dependencies": {
-    "async-kit": "^0.5.10",
-    "highlight.js": "^8.8.0",
+    "async-kit": "^1.0.0",
+    "highlight.js": "^8.9.1",
     "marked": "^0.3.5",
     "minimist": "^1.2.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "jshint": "^2.5.6",
-    "mocha": "^2.2.4"
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5"
   },
   "scripts": {
     "test": "mocha"
