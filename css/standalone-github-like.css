@@ -5,3 +5,12 @@ github-like style (c) Cédric Ronvel <cedric.ronvel@gmail.com>
 body {
 	padding: 30px 0 80px 0;
 }
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+

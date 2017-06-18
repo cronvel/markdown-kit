@@ -13,7 +13,8 @@
     "async-kit": "^2.2.3",
     "highlight.js": "^9.12.0",
     "marked": "^0.3.6",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "string-kit": "^0.5.24"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",

@@ -72,3 +72,6 @@ div.markdown {
 	outline: 0 none;
 }
 
+.markdown figure { margin: 2px 10px; padding: 2px; }
+.markdown figcaption { text-align: center; font-style: italic; color: #777; }
+
