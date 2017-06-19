@@ -87,6 +87,7 @@ div.markdown {
 
 .markdown figure img {
 	display: table-row;
+	vertical-align: bottom;
 }
 
 .markdown figure figcaption {
@@ -94,7 +95,7 @@ div.markdown {
 	text-align: center;
 	font-style: italic;
 	color: #777;
-	background-color: #fbb;
+	background-color: #eee;
 }
 
 
