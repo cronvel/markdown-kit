@@ -9,7 +9,6 @@ div.markdown {
 	padding: 15px;
 	color: #333;
 	font-family: Helvetica,arial,freesans,clean,sans-serif;
-	line-height: 1.7;
 	word-wrap: break-word;
 }
 
@@ -33,6 +32,10 @@ div.markdown {
 	font-size: 14px;
 }
 
+.markdown p {
+	line-height: 1.7;
+}
+
 .markdown pre {
 	background-color: #eee;
 	border: 1px solid #d9d9d9;
@@ -48,6 +51,7 @@ div.markdown {
 	border-radius: 3px;
 	margin: 0 2px;
 	padding: 2px 4px;
+	line-height: 1.7;
 }
 
 .markdown pre code {
@@ -72,6 +76,25 @@ div.markdown {
 	outline: 0 none;
 }
 
-.markdown figure { margin: 2px 10px; padding: 2px; }
-.markdown figcaption { text-align: center; font-style: italic; color: #777; }
+.markdown figure {
+	display: table;
+	margin: 10px auto;
+	width: 1px;
+	border-collapse: collapse;
+}
+
+.markdown figure.float { margin: 2px 2px; }
+
+.markdown figure img {
+	display: table-row;
+}
+
+.markdown figure figcaption {
+	display: table-row;
+	text-align: center;
+	font-style: italic;
+	color: #777;
+	background-color: #fbb;
+}
+
 
