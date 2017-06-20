@@ -84,6 +84,8 @@ div.markdown {
 }
 
 .markdown figure.float { margin: 2px 2px; }
+.markdown figure.float-left { margin-right: 20px; }
+.markdown figure.float-right { margin-left: 20px; }
 
 .markdown figure img {
 	display: table-row;
