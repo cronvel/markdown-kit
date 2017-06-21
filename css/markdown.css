@@ -106,18 +106,19 @@
 /* Sections and columns */
 
 .markdown div.section {
-	display: table;
+	display: flex;
 	clear: both;
 }
 
 .markdown div.column {
-	display: table-cell;
+	flex: 1;
 	padding: 0 10px;
 }
 
 .markdown div.column:nth-last-child(n+2) {
 	border-right: 1px solid #c6cbd1;
 }
+
 
 /* Tables */
 

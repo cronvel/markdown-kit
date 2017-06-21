@@ -58,11 +58,15 @@ This paragraph inside left column, This paragraph inside left column, This parag
 
 |||
 
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column
+
+This paragraph inside right column
+
+This paragraph inside right column
+
+This paragraph inside right column
+
+This paragraph inside right column
 
 +++
 
