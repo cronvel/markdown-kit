@@ -1,12 +1,38 @@
 
-~!![my legend, my legend, my legend, my legend, my legend, my legend, my legend, my legend, ](http://blog.soulserv.net/content/images/2015/11/exit1.jpg)
+Todo:
+- [ ] do my laundry 
+- [x] code something great
+- [x] eat something
+- [ ] call my friends
+- [x] this is a really big task, this is a really big task, this is a really big task, this is a really big task, this is a really big task,
+  this is a really big task, this is a really big task, this is a really big task, this is a really big task, this is a really big task, 
+
+Todo:
+- do my laundry 
+- code something great
+- eat something
+- call my friends
+- this is a really big task, this is a really big task, this is a really big task, this is a really big task, this is a really big task,
+  this is a really big task, this is a really big task, this is a really big task, this is a really big task, this is a really big task, 
+
+some ~~striked text~~
+
+| version | status | codename |
+| :--- | :---: | ---: |
+| v1 | ok | Antilope |
+| v2 | not ok | Bear |
+| v3 | pending | Crocodile |
+| v4 | pending | Elephant |
+| v5 | pending | Falcon |
+
+:!![my legend, my legend, my legend, my legend, my legend, my legend, my legend, my legend, ](http://blog.soulserv.net/content/images/2015/11/exit1.jpg)
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 
-~~~
++++
 
 This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
 This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
@@ -22,7 +48,23 @@ This paragraph inside right column, This paragraph inside right column, This par
 This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
 This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
 
-~~~
++++
+
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+
+|||
+
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+
++++
 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 

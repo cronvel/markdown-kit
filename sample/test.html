@@ -5,26 +5,12 @@
 <meta charset="UTF-8">
 <style>
 /*
-github-like style (c) Cédric Ronvel <cedric.ronvel@gmail.com>
+	Copyright (c) Cédric Ronvel <cedric.ronvel@gmail.com>
 */
 
 body {
 	padding: 30px 0 80px 0;
 }
-
-.float-left {
-	float: left;
-}
-
-.float-right {
-	float: right;
-}
-
-
-
-/*
-github-like style (c) Cédric Ronvel <cedric.ronvel@gmail.com>
-*/
 
 div.markdown {
 	max-width: 800px;
@@ -36,6 +22,20 @@ div.markdown {
 	word-wrap: break-word;
 }
 
+
+
+/*
+	Copyright (c) Cédric Ronvel <cedric.ronvel@gmail.com>
+*/
+
+.markdown .float-left { float: left; }
+.markdown .float-right { float: right; }
+
+.markdown .align-left { text-align: left; }
+.markdown .align-right { text-align: right; }
+.markdown .align-center { text-align: center; }
+.markdown .align-justify { text-align: justify; }
+
 .markdown h1 ,
 .markdown h2 ,
 .markdown h3 ,
@@ -46,18 +46,17 @@ div.markdown {
 	margin: 2em 0 1em 0;
 }
 
-.markdown p ,
 .markdown blockquote ,
-.markdown ul ,
-.markdown ol ,
-.markdown dl ,
 .markdown table {
 	margin: 15px 0;
 	font-size: 14px;
 }
 
 .markdown p {
+	font-size: 14px;
 	line-height: 1.7;
+	margin: 1em 0;
+	text-align: justify;
 }
 
 .markdown pre {
@@ -100,6 +99,8 @@ div.markdown {
 	outline: 0 none;
 }
 
+/* Block media */
+
 .markdown figure {
 	display: table;
 	margin: 10px auto;
@@ -128,6 +129,8 @@ div.markdown {
 	background-color: #eee;
 }
 
+/* Sections and columns */
+
 .markdown div.section {
 	display: table;
 	clear: both;
@@ -135,20 +138,103 @@ div.markdown {
 
 .markdown div.column {
 	display: table-cell;
+	padding: 0 10px;
+}
+
+.markdown div.column:nth-last-child(n+2) {
+	border-right: 1px solid #c6cbd1;
+}
+
+/* Tables */
+
+.markdown table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.markdown table tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.markdown table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.markdown table th, .markdown table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+/* Lists and checkboxes */
+
+.markdown ul ,
+.markdown ol ,
+.markdown dl {
+	margin: 1em 0;
+}
+
+.markdown ul li {
+	font-size: 14px;
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.markdown ul.todo-list {
+	display: table;
+	max-width: 50%;
+	min-width: 10%;
+	background-color: #f6f3c0;
+	border-radius: 0.5em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	padding-right: 2em;
+	padding-left: 4em;		/* =~ 2 + 1 + ( 1.75 + 0.3 ) / 2 */
+}
+
+.markdown ul.todo-list li {
+	text-indent: -1.6em;	/* = 1.75 - 0.3 / 2 */
+	line-height: 1.2;
+}
+
+.markdown ul li.unchecked {
+	list-style: none;
+}
+
+.markdown ul li.unchecked::before {
+	content: '☐';
+	font-size: 1.75em;
+	position: relative;
+	top: 0.15em;
+	right: 0.3em;
+}
+
+.markdown ul li.checked {
+	list-style: none;
+}
+
+.markdown ul li.checked::before {
+	content: '☑';
+	color: green;
+	font-size: 1.75em;
+	position: relative;
+	top: 0.15em;
+	right: 0.3em;
 }
 
 /* experiments */
 
-.markdown div.column:nth-last-child(2) {
-	background-color: #77f;
-}
 
 
 
 
 
 /*
-github-like style based upon (c) Vasily Polovnyov <vast@whiteants.net>
+	Copyright (c) Vasily Polovnyov <vast@whiteants.net>
+	Copyright (c) Cédric Ronvel <cedric.ronvel@gmail.com>
 */
 
 .markdown .hljs {
@@ -280,26 +366,117 @@ github-like style based upon (c) Vasily Polovnyov <vast@whiteants.net>
 <div class="section">
 
 <div class="column">
+<p>Todo:</p>
+<ul class="todo-list">
+<li class="unchecked">do my laundry </li>
+<li class="checked">code something great</li>
+<li class="checked">eat something</li>
+<li class="unchecked">call my friends</li>
+<li class="checked">this is a really big task, this is a really big task, this is a really big task, this is a really big task, this is a really big task,</li>
+</ul>
+<p>Todo:</p>
+<ul>
+<li>do my laundry </li>
+<li>code something great</li>
+<li>eat something</li>
+<li>call my friends</li>
+<li>this is a really big task, this is a really big task, this is a really big task, this is a really big task, this is a really big task,</li>
+</ul>
+<p>some <del>striked text</del></p>
+<table>
+<thead>
+<tr>
+<th class="align-left">version</th>
+<th class="align-center">status</th>
+<th class="align-right">codename</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="align-left">v1</td>
+<td class="align-center">ok</td>
+<td class="align-right">Antilope</td>
+</tr>
+<tr>
+<td class="align-left">v2</td>
+<td class="align-center">not ok</td>
+<td class="align-right">Bear</td>
+</tr>
+<tr>
+<td class="align-left">v3</td>
+<td class="align-center">pending</td>
+<td class="align-right">Crocodile</td>
+</tr>
+<tr>
+<td class="align-left">v4</td>
+<td class="align-center">pending</td>
+<td class="align-right">Elephant</td>
+</tr>
+<tr>
+<td class="align-left">v5</td>
+<td class="align-center">pending</td>
+<td class="align-right">Falcon</td>
+</tr>
+</tbody>
+</table>
 <figure class="float float-left"><img src="http://blog.soulserv.net/content/images/2015/11/exit1.jpg" alt="my legend, my legend, my legend, my legend, my legend, my legend, my legend, my legend, "/><figcaption>my legend, my legend, my legend, my legend, my legend, my legend, my legend, my legend, </figcaption></figure><p>This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, </p>
-<pre><code>
-This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">left</span> <span class="hljs-built_in">column</span>,
 
-|||
+</div>
 
-This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>,
-This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>, This paragraph inside <span class="hljs-built_in">right</span> <span class="hljs-built_in">column</span>,
-</code></pre><p>This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
+</div>
+
+<div class="section">
+
+<div class="column">
+<p>This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,</p>
+
+</div>
+
+<div class="column">
+<p>This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="column">
+<p>This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
+This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,</p>
+
+</div>
+
+<div class="column">
+<p>This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
+This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="column">
+<p>This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 

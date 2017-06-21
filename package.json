@@ -1,6 +1,6 @@
 {
   "name": "markdown-kit",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A markdown toolbox.",
   "main": "lib/markdown-kit.js",
   "directories": {
@@ -35,5 +35,13 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cronvel/markdown-kit/issues"
+  },
+  "copyright": {
+    "title": "Markdown2Html",
+    "years": [
+      2015,
+      2017
+    ],
+    "owner": "Cédric Ronvel"
   }
 }
