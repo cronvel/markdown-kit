@@ -59,12 +59,11 @@
 }
 
 .markdown a {
-	color: #4183C4;
+	color: #0366d6;
 	text-decoration: none;
 }
 
 .markdown a:hover {
-	color: #4183C4;
 	text-decoration: underline;
 }
 
@@ -99,7 +98,7 @@
 	display: table-row;
 	text-align: center;
 	font-style: italic;
-	color: #777;
+	color: #6a737d;
 	background-color: #eee;
 }
 
@@ -118,7 +117,6 @@
 .markdown div.column:nth-last-child(n+2) {
 	border-right: 1px solid #c6cbd1;
 }
-
 
 /* Tables */
 
