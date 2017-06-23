@@ -2,9 +2,13 @@
 
 # Markdown Kit
 
-A markdown toolbox.
+It convert a markdown file to a HTML document.
 
-Early alpha.
+It supports the [Hyper-Markdown syntax](https://github.com/cronvel/hyper-markdown).
 
+CSS are included in the HTML inside *style* tag, so only images should be included along the HTML output.
 
+Usage: 
+
+`markdown2html source.md > target.html`
 
