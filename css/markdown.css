@@ -104,7 +104,7 @@
 
 /* Sections and columns */
 
-.markdown div.section {
+.markdown section {
 	display: flex;
 	clear: both;
 }

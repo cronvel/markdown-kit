@@ -1,6 +1,6 @@
 {
   "name": "markdown-kit",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A markdown toolbox.",
   "main": "lib/markdown-kit.js",
   "directories": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "async-kit": "^2.2.3",
     "highlight.js": "^9.12.0",
-    "hyper-markdown": "^0.3.6",
+    "hyper-markdown": "^0.3.11",
     "minimist": "^1.2.0",
     "string-kit": "^0.5.24"
   },
