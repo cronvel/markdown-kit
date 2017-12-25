@@ -25,6 +25,18 @@
 	margin: 15px 0;
 }
 
+.markdown cite {}
+
+.markdown blockquote cite {
+	display: block;
+	text-align: right;
+	margin-right: 10%;
+}
+
+.markdown blockquote cite::before {
+	content: "-- ";
+}
+
 .markdown p {
 	line-height: 1.7;
 	margin: 1em 0;
