@@ -119,12 +119,12 @@
 	clear: both;
 }
 
-.markdown div.column {
+.markdown div.column , .markdown column {
 	flex: 1;
 	padding: 0 10px;
 }
 
-.markdown div.column:nth-last-child(n+2) {
+.markdown div.column:nth-last-child(n+2) , .markdown column:nth-last-child(n+2) {
 	border-right: 1px solid #c6cbd1;
 }
 

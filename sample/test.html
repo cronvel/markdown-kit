@@ -11,7 +11,7 @@
 
 body {
 	padding: 30px 0 80px 0;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 div.markdown {
@@ -50,6 +50,18 @@ div.markdown {
 .markdown blockquote ,
 .markdown table {
 	margin: 15px 0;
+}
+
+.markdown cite {}
+
+.markdown blockquote cite {
+	display: block;
+	text-align: right;
+	margin-right: 10%;
+}
+
+.markdown blockquote cite::before {
+	content: "-- ";
 }
 
 .markdown p {
@@ -134,12 +146,12 @@ div.markdown {
 	clear: both;
 }
 
-.markdown div.column {
+.markdown div.column , .markdown column {
 	flex: 1;
 	padding: 0 10px;
 }
 
-.markdown div.column:nth-last-child(n+2) {
+.markdown div.column:nth-last-child(n+2) , .markdown column:nth-last-child(n+2) {
 	border-right: 1px solid #c6cbd1;
 }
 
@@ -358,7 +370,7 @@ div.markdown {
 
 <section>
 
-<div class="column">
+<column>
 <p>Todo:</p>
 <ul class="todo-list">
 <li class="unchecked">do my laundry </li>
@@ -419,64 +431,64 @@ This is a big paragraph, This is a big paragraph, This is a big paragraph, This 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, </p>
 
-</div>
+</column>
 
 </section>
 
 <section>
 
-<div class="column">
-<p>This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,</p>
+<column>
+<p>This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,</p>
 
-</div>
+</column>
 
-<div class="column">
-<p>This paragraph inside right column</p>
-<p>This paragraph inside right column</p>
-<p>This paragraph inside right column</p>
-<p>This paragraph inside right column</p>
-<p>This paragraph inside right column</p>
+<column>
+<p>This paragraph is inside the right column</p>
+<p>This paragraph is inside the right column</p>
+<p>This paragraph is inside the right column</p>
+<p>This paragraph is inside the right column</p>
+<p>This paragraph is inside the right column</p>
 
-</div>
-
-</section>
-
-<section>
-
-<div class="column">
-<p>This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,
-This paragraph inside left column, This paragraph inside left column, This paragraph inside left column,</p>
-
-</div>
-
-<div class="column">
-<p>This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,
-This paragraph inside right column, This paragraph inside right column, This paragraph inside right column,</p>
-
-</div>
+</column>
 
 </section>
 
 <section>
 
-<div class="column">
+<column>
+<p>This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,
+This paragraph is inside the left column, This paragraph is inside the left column, This paragraph is inside the left column,</p>
+
+</column>
+
+<column>
+<p>This paragraph is inside the right column, This paragraph is inside the right column, This paragraph is inside the right column,
+This paragraph is inside the right column, This paragraph is inside the right column, This paragraph is inside the right column,
+This paragraph is inside the right column, This paragraph is inside the right column, This paragraph is inside the right column,
+This paragraph is inside the right column, This paragraph is inside the right column, This paragraph is inside the right column,
+This paragraph is inside the right column, This paragraph is inside the right column, This paragraph is inside the right column,</p>
+
+</column>
+
+</section>
+
+<section>
+
+<column>
 <p>This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, 
 This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, This is a big paragraph, </p>
 
-</div>
+</column>
 
 </section>
 
