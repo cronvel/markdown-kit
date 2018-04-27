@@ -12,12 +12,16 @@
 
 .markdown h1 ,
 .markdown h2 ,
-.markdown h3 ,
+.markdown h3 {
+	margin: 2em 0 1em 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+
 .markdown h4 ,
 .markdown h5 ,
 .markdown h6 {
-	border-bottom: 1px solid #d9d9d9;
-	margin: 2em 0 1em 0;
+	margin: 0.5em 0 0 0;
+	text-decoration: underline;
 }
 
 .markdown blockquote ,
