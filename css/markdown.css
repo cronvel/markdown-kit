@@ -47,6 +47,12 @@
 	text-align: justify;
 }
 
+@media print {
+	.markdown p {
+		line-height: 1.5;
+	}
+}
+
 .markdown pre {
 	background-color: #eee;
 	border: 1px solid #d9d9d9;
@@ -167,6 +173,12 @@
 .markdown ul li {
 	line-height: 1.7;
 	text-align: justify;
+}
+
+@media print {
+	.markdown ul li {
+		line-height: 1.5;
+	}
 }
 
 .markdown ul.todo-list {

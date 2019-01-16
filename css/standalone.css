@@ -24,3 +24,37 @@ h4 { font-size: 1.2em ; }
 h5 { font-size: 1em ; }
 h6 { font-size: 0.8em ; }
 
+
+
+@media print {
+	body {
+		font-size: 7pt;
+		padding: 0;
+		margin: 0;
+		background-color: #fff;
+	}
+
+	div.markdown {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+
+
+h1 {
+	break-before: page;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+	break-after: avoid-page;
+	break-inside: avoid-page;
+}
+
+blockquote, cite, table, li {
+	break-inside: avoid-page;
+}
+
+div, p {
+	widows: 2;
+	orphans: 2;
+}
