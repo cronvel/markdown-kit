@@ -14,8 +14,8 @@
     "hyper-markdown": "^0.4.1",
     "hyper-markdown-pdf": "0.0.1",
     "minimist": "^1.2.0",
-    "seventh": "^0.6.5",
-    "string-kit": "^0.6.11"
+    "seventh": "^0.7.18",
+    "string-kit": "^0.9.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1"
