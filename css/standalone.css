@@ -46,15 +46,23 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6, ul {
-	break-after: avoid-page;
-	break-inside: avoid-page;
+	page-break-after: avoid;
+	break-after: avoid;
+
+	break-inside: avoid;
+	page-break-inside: avoid;
 }
 
 blockquote, cite, table, li {
-	break-inside: avoid-page;
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
-div, p {
+html, body, div, section, column, p {
 	widows: 2;
 	orphans: 2;
+
+	page-break-inside: auto;
+	break-inside: auto;
 }
+
