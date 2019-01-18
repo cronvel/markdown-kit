@@ -144,9 +144,10 @@
 /* Tables */
 
 .markdown table {
-	display: block;
-	margin: 1em 0;
-	width: 100%;
+	display: table;
+	margin: 1em auto;
+	max-width: 90%;
+	width: auto;
 	overflow: auto;
 	border-spacing: 0;
 	border-collapse: collapse;
@@ -177,6 +178,7 @@
 .markdown ol ,
 .markdown dl {
 	margin: 1em 0;
+	padding: 0 40px;
 }
 
 .markdown li ul ,

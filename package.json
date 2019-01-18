@@ -1,6 +1,6 @@
 {
   "name": "markdown-kit",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "A markdown toolbox.",
   "main": "lib/markdown-kit.js",
   "directories": {
