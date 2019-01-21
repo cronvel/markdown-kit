@@ -10,6 +10,33 @@
 .markdown .align-center { text-align: center; }
 .markdown .align-justify { text-align: justify; }
 
+.markdown h1 {
+	font-size: 2.5em ;
+
+	page-break-before: page;
+	break-before: page;
+
+	page-break-after: avoid;
+	break-after: avoid;
+
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.markdown h2 { font-size: 2em ; }
+.markdown h3 { font-size: 1.5em ; }
+.markdown h4 { font-size: 1.2em ; }
+.markdown h5 { font-size: 1em ; }
+.markdown h6 { font-size: 0.8em ; }
+
+.markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+	page-break-after: avoid;
+	break-after: avoid;
+
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
 .markdown h1 ,
 .markdown h2 ,
 .markdown h3 {
@@ -30,14 +57,23 @@
 	padding: 0.25em 2em;
 	border-radius: 0.5em;
 	background-color: #e9ecfe;
+
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
-.markdown cite {}
+.markdown cite {
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
 
 .markdown blockquote cite {
 	display: block;
 	text-align: right;
 	margin-right: 10%;
+
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 .markdown blockquote cite::before {
@@ -48,6 +84,11 @@
 	line-height: 1.7;
 	margin: 1em 0;
 	text-align: justify;
+
+	widows: 3;
+	orphans: 3;
+	page-break-inside: auto;
+	break-inside: auto;
 }
 
 @media print {
@@ -79,6 +120,9 @@
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+
+.markdown mark {
 }
 
 .markdown a {
@@ -130,11 +174,17 @@
 .markdown section {
 	display: flex;
 	clear: both;
+
+	page-break-inside: auto;
+	break-inside: auto;
 }
 
 .markdown div.column , .markdown column {
 	flex: 1;
 	padding: 0 10px;
+
+	page-break-inside: auto;
+	break-inside: auto;
 }
 
 .markdown div.column:nth-last-child(n+2) , .markdown column:nth-last-child(n+2) {
@@ -145,17 +195,32 @@
 
 .markdown table {
 	display: table;
-	margin: 1em auto;
+	margin: 1.5em auto;
 	max-width: 90%;
 	width: auto;
 	overflow: auto;
 	border-spacing: 0;
 	border-collapse: collapse;
+
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+.markdown table caption {
+	caption-side: top;
+	text-align: center;
+	background-color: #ff8000;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+    border: 1px solid #c6cbd1;
+    padding: 6px 13px;
 }
 
 .markdown table thead tr {
 	background-color: #fae8d6;
 	border-top: 1px solid #c6cbd1;
+	border-bottom: 2px solid #c6cbd1;
 }
 
 .markdown table tbody tr {
@@ -179,6 +244,17 @@
 .markdown dl {
 	margin: 1em 0;
 	padding: 0 40px;
+
+	page-break-before: avoid;
+	break-before: avoid;
+
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.markdown li {
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 .markdown li ul ,
