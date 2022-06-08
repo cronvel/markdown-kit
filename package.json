@@ -1,6 +1,6 @@
 {
   "name": "markdown-kit",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "A markdown toolbox.",
   "main": "lib/markdown-kit.js",
   "directories": {
@@ -10,7 +10,7 @@
     "markdown2html": "./bin/markdown2html"
   },
   "dependencies": {
-    "highlight.js": "^9.13.1",
+    "highlight.js": "^10.4.0",
     "hyper-markdown": "^0.6.0",
     "hyper-markdown-pdf": "0.0.15",
     "minimist": "^1.2.6",
