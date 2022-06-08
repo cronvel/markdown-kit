@@ -237,6 +237,14 @@
     border: 1px solid #dfe2e5;
 }
 
+.markdown table th.vertical-separator, .markdown table td.vertical-separator {
+	padding: 0;
+	border-left: 3px solid #afb2b5;
+	border-right: 3px solid #afb2b5;
+	border-top: none;
+	border-bottom: none;
+}
+
 /* Lists and checkboxes */
 
 .markdown ul ,
