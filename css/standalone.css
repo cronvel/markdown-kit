@@ -15,7 +15,7 @@ div.markdown {
 
 @media print {
 	body {
-		font-size: 7pt;
+		font-size: 9pt;
 		padding: 0;
 		margin: 0;
 		background-color: #fff;

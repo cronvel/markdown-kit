@@ -1,34 +1,3 @@
-@media print {
-	.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
-		break-after: avoid-page;
-		break-inside: avoid-page;
-	}
-
-	.markdown p {
-		line-height: 1.5;
-		break-inside: auto;
-		widows: 3;
-		orphans: 3;
-	}
-
-	.markdown blockquote { break-inside: avoid-page; }
-	.markdown cite { break-inside: avoid-page; }
-	.markdown blockquote cite { break-inside: avoid-page; }
-	.markdown table { break-inside: avoid-page; }
-
-	.markdown ul ,
-	.markdown ol ,
-	.markdown dl {
-		break-before: avoid-page;
-		break-inside: avoid-page;
-	}
-
-	.markdown ul li {
-		line-height: 1.5;
-		break-inside: avoid-page;
-	}
-}
-
 .markdown .float-left { float: left; }
 .markdown .float-right { float: right; }
 
@@ -37,14 +6,18 @@
 .markdown .align-center { text-align: center; }
 .markdown .align-justify { text-align: justify; }
 
-.markdown h1 { font-size: 2.5em ; }
+.markdown h1 { font-size: 2.6em ; }
 .markdown h2 { font-size: 2em ; }
-.markdown h3 { font-size: 1.5em ; }
-.markdown h4 { font-size: 1.2em ; }
+.markdown h3 { font-size: 1.6em ; }
+.markdown h4 { font-size: 1.25em ; }
 .markdown h5 { font-size: 1em ; }
 .markdown h6 { font-size: 0.8em ; }
 
-.markdown h1 ,
+.markdown h1 {
+	margin: 2em 0 3em 0;
+	text-align: center;
+}
+
 .markdown h2 ,
 .markdown h3 {
 	margin: 2em 0 1em 0;
@@ -285,3 +258,41 @@
 
 /* experiments */
 
+/* print / pdf */
+
+@media print {
+	.markdown h1 {
+		break-before: page;
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+
+	.markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+
+	.markdown p {
+		line-height: 1.5;
+		break-inside: auto;
+		widows: 3;
+		orphans: 3;
+	}
+
+	.markdown blockquote { break-inside: avoid-page; }
+	.markdown cite { break-inside: avoid-page; }
+	.markdown blockquote cite { break-inside: avoid-page; }
+	.markdown table { break-inside: avoid-page; }
+
+	.markdown ul ,
+	.markdown ol ,
+	.markdown dl {
+		break-before: avoid-page;
+		break-inside: avoid-page;
+	}
+
+	.markdown ul li {
+		line-height: 1.5;
+		break-inside: avoid-page;
+	}
+}
