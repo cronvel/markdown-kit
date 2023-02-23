@@ -24,29 +24,16 @@
 	SOFTWARE.
 */
 
-/* jshint unused:false */
 /* global describe, it, before, after */
 
 
-var markdownKit = require( '../lib/markdown-kit.js' ) ;
-var expect = require( 'expect.js' ) ;
+const markdownKit = require( '../lib/markdown-kit.js' ) ;
 
 
 
-
-
-			/* Tests */
-
-
-
-describe( "..." , function() {
+describe( "..." , () => {
 	
-	it( "..." , function() {
+	it( "..." , () => {
 	} ) ;
-	
 } ) ;
-
-
-
-
 
