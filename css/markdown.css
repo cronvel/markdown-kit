@@ -137,6 +137,8 @@
 .markdown div.column , .markdown column {
 	flex: 1;
 	padding: 0 10px;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .markdown div.column:nth-last-child(n+2) , .markdown column:nth-last-child(n+2) {
@@ -192,6 +194,10 @@
 	border-right: 3px solid #afb2b5;
 	border-top: none;
 	border-bottom: none;
+}
+
+.markdown table td img {
+	max-width: 100%;
 }
 
 /* Lists and checkboxes */
